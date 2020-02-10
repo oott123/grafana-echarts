@@ -4,6 +4,7 @@ import { SimpleOptions } from 'types';
 
 import { debounce } from 'lodash';
 import echarts from 'echarts';
+import 'echarts/map/js/china';
 import 'echarts-wordcloud';
 import 'echarts-liquidfill';
 
