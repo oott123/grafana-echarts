@@ -42,7 +42,7 @@ export class SimpleEditor extends PureComponent<PanelEditorProps<SimpleOptions>>
   }
 
   render() {
-    const funcStart = 'function (data) {';
+    const funcStart = 'function (data, chart, echarts) {';
     const funcEnd = '}';
     return (
       <PanelOptionsGroup title="Echarts Option">

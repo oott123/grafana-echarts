@@ -26,10 +26,10 @@ export class SimplePanel extends PureComponent<Props> {
     isGenGetOption => {
       try {
         if (isGenGetOption) {
-          this.getOption = new Function('data', this.props.options.getOption);
+          this.getOption = new Function('data', 'chart', 'echarts', this.props.options.getOption);
         }
         this.chart.clear();
-        this.chart.setOption(this.getOption(this.props.data));
+        this.chart.setOption(this.getOption(this.props.data, this.chart, echarts));
       } catch (err) {
         console.log('Editor content error!');
         throw err;
