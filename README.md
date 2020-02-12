@@ -4,7 +4,7 @@ Echarts panel for grafana 6+, coding with react.
 
 Code editor is attached in the edit panel to configure the option of echarts.
 
-Support **liquidfill** and **wordcloud** plugin.
+Support **liquidfill** and **wordcloud** plugin, load china map by default.
 
 ## How Use
 
