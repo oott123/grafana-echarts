@@ -1,6 +1,6 @@
 {
   "name": "grafana-echarts",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Echarts panel for grafana",
   "scripts": {
     "build": "grafana-toolkit plugin:build",
