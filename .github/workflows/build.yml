@@ -15,11 +15,12 @@ jobs:
     - run: yarn build
       env:
         CI: true
+    - run: mkdir release && mv dist release/grafana-echarts
     - name: Upload build result
       uses: actions/upload-artifact@v1
       with:
         name: plugin
-        path: dist
+        path: release
   release:
     name: Release
     runs-on: ubuntu-latest
